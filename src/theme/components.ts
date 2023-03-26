@@ -10,7 +10,12 @@ const components: Record<string, Record<string, Record<ThemeVariants, string>>> 
       "🌞": colors.primary["🌞"],
       "🌚": colors.primary["🌚"]
     },
-
+  },
+  card: {
+    bg: {
+      "🌞": colors.primary["🌞"],
+      "🌚": colors.primary["🌚"]
+    }
   }
 }
 
