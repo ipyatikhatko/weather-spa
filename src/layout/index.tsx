@@ -13,12 +13,16 @@ const Background = styled.div<{ themeVariant: ThemeVariants }>`
   height: 100%;
 `;
 
+const StyledMain = styled.main`
+  padding: 1rem 2rem;
+`;
+
 const Layout: React.FC<{ children: ReactNode }> = ({ children }) => {
   const theme = useAtomValue(themeAtom);
   return (
     <Background themeVariant={theme}>
       <Header />
-      <main>{children}</main>
+      <StyledMain>{children}</StyledMain>
     </Background>
   );
 };
